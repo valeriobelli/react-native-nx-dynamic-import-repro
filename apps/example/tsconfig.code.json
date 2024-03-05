@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"tsBuildInfoFile": ".tscache/code.tsbuildinfo",
+		"types": ["node"]
+	},
+	"include": ["../../../types", "src"],
+	"exclude": ["src/**/__tests__"]
+}

@@ -1,0 +1,45 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"declaration": false,
+		"exactOptionalPropertyTypes": false,
+		// The following rule should be removed when tools dependent on TypeScript support version 5.0 or later
+		// (currently, ts-node, jest-config and cosmiconfig-typescript-loader).
+		"ignoreDeprecations": "5.0",
+		"importHelpers": true,
+		"incremental": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["esnext", "dom", "dom.iterable"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"rootDir": ".",
+		"skipDefaultLibCheck": true,
+		"target": "es2015",
+
+		// The following rules should be removed by extending @tsconfig/strictest/tsconfig.json
+		// once we upgrade to TypeScript 5.0 or later.
+		// https://app.asana.com/0/1203897250636043/1204116018222055/f
+		"strict": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"importsNotUsedAsValues": "error",
+		"checkJs": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"exclude": ["node_modules"],
+	"extends": "./tsconfig.base.json"
+}

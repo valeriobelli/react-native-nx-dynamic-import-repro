@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"isolatedModules": false,
+		"tsBuildInfoFile": ".tscache/test.tsbuildinfo",
+		"types": ["jest", "node"]
+	},
+	"include": ["../../../types", "jest.config.ts", "jest.setupAfterEnv.ts", "src/**/__tests__"]
+}
